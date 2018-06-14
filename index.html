@@ -170,11 +170,11 @@
     var gt2Constants = {
         '2': {
             'grooveDepth': 0.76,
-            'pitchFactor': 0.41,
+            'pitchFactor': 0.25,
             'pld': 0.254,
             'insideDiameter': 0.555,
             'insideRoundDiameter': 1,
-            'outsideRoundDiameter': 0.15
+            'outsideRoundDiameter': 0.10
         },
         '3': {
             'grooveDepth': 1.14,
@@ -660,7 +660,7 @@
         var shapesForExport = [];
         var oneTeethAngle = (360 / settings.numberOfTeeth);
 
-        var pitchRadius = (((2 * settings.numberOfTeeth) / Math.PI) / 2);
+        var pitchRadius = (((2 * settings.numberOfTeeth) / Math.PI) / 2) - 0.18;
         var pitchDiametr = pitchRadius * 2;
         var outsideDiameter = pitchDiametr - ((settings.gerType.pld * 2));
         var outsideRadius = outsideDiameter / 2;
