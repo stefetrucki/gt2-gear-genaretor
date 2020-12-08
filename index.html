@@ -63,8 +63,8 @@
 <div class="settings">
     <legend id="params">
          <h1>GT2 Gear Generator</h1>
-        <br> <br>
-        <H2>Settings:</H2> <br>
+        <br>
+        <H2>Settings:</H2>
 
         <div>
             <label>Number Of Teeth</label>
@@ -75,13 +75,13 @@
             <input type="number" placeholder="height" min="0" onchange="changeParam('centralHole',this);" value="3"/>
         </div>
         
-         <br> <br
-         <H2>Optional:</H2> <br>
+         <br>
+         <H2>Optional:</H2>
 
         <div>
             <label>Number of radial holes</label>
-            <input type="number" placeholder="height" min="0" onchange="changeParam('numberOfRadialRoles',this);"
-                   value="0"/>
+            <input type="number" placeholder="height" min="1" onchange="changeParam('numberOfRadialRoles',this);"
+                   value="1"/>
         </div>
         <div>
             <label>Radial holes diameter</label>
@@ -93,9 +93,8 @@
             <input type="number" placeholder="height" min="0" onchange="changeParam('radialHolesDistance',this);"
                    value="5"/>
         </div>
-        <br><br>
-        <H2>Laser-Settings:</H2> <br>
-
+        <br>
+        <H2>Laser-Settings:</H2>
         <div>
             <label>Work Speed</label>
             <input onchange="changeParam('workSpeed',this);" type="number" min="0" placeholder="Work Speed"
@@ -115,7 +114,7 @@
                    value="0"/>
         </div>
     </legend>
-    <br><br>
+    <br>
     <legend id="export">
         <H2>Export</H2>
 
