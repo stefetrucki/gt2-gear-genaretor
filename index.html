@@ -5,10 +5,9 @@
     <title>GT2 gcode gear generator</title>
     <meta charset="utf-8">
     <script type="text/javascript">var switchTo5x = true;</script>
-    <script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript" src="//s.sharethis.com/loader.js"></script>
 
-    <meta property="og:url"           content="https://avtehnik.github.io/gt2-gear-genaretor/" />
+
+    <meta property="og:url"           content="https://stefetrucki.github.io/gt2-gear-genaretor/" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Gcode box generator" />
     <meta property="og:description"   content="Generate box for laser cutter or download drawing" />
@@ -60,14 +59,13 @@
     </style>
 </head>
 <body>
-<a href="https://github.com/avtehnik/gt2-gear-genaretor"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 <div class="settings">
     <legend id="params">
         <label for="params">Settings</label>
 
         <div>
             <label>Number Of Teeth</label>
-            <input type="number" placeholder="width" min="3" onchange="changeParam('numberOfTeeth',this);" value="50"/>
+            <input type="number" placeholder="width" min="8" onchange="changeParam('numberOfTeeth',this);" value="50"/>
         </div>
         <div>
             <label>Central hole</label>
@@ -120,7 +118,7 @@
 </div>
 <script src="js/three.js"></script>
 <script src="js/dxf.js"></script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
 <script>
 
 
@@ -169,7 +167,7 @@
 
     var gt2Constants = {
         '2': {
-            'grooveDepth': 0.70,
+            'grooveDepth': 0.75,
             'pitchFactor': 0.25,
             'pld': 0.254,
             'insideDiameter': 0.555,
@@ -769,22 +767,6 @@
         renderer.render(scene, camera);
     }
 </script>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-90392164-1', 'auto');
-    ga('send', 'pageview');
-</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5891902795361a67"></script>
 </body>
 </html>
